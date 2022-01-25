@@ -10,15 +10,15 @@ const header = (input, settings = {}) => CFonts.say(input, {
   lineHeight: 1,
   space: true,
   maxLength: '0',
-  gradient: ["#DC5D3E", "#F2D84A"],
+  gradient: ['#DC5D3E', '#F2D84A'],
   independentGradient: false,
   transitionGradient: true,
   env: 'node',
-  ...settings
+  ...settings,
 });
 const hero = (input, settings = {}) => header(input, {
   font: 'block',
-  ...settings
+  ...settings,
 });
 const error = (input, ...args) => console.error(chalk.red(input), ...args);
 const warning = (input, ...args) => console.warn(chalk.bold.hex('FF8800')(input), ...args);

@@ -1,11 +1,13 @@
 import { Octokit } from 'octokit';
-import { hero, header, log, warning, error } from './lib/logger.js';
+import {
+  hero, header, log, warning, error,
+} from './lib/logger.js';
 
 const lastExecuted = new Date();
 
 // introduction block
 hero('0-vortex|RSS Feed');
-log(`Started execution at ${lastExecuted}`)
+log(`Started execution at ${lastExecuted}`);
 
 const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
@@ -30,6 +32,5 @@ const users = await octokit.paginate(
   (response) => response.data,
 );
 error('Fetched %d users', users.length);
-
 
 // cache block
