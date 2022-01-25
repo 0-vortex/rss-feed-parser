@@ -1,0 +1,50 @@
+{
+  "name": "rss-feed-parser",
+  "description": "Experimenting with RSS parsing my network feed",
+  "keywords": [],
+  "version": "1.2.5",
+  "author": "TED Vortex <ted.vortex@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "main": "src/index.js",
+  "type": "module",
+  "homepage": "https://github.com/0-vortex/rss-feed-parser#readme",
+  "bugs": {
+    "url": "https://github.com/0-vortex/rss-feed-parser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0-vortex/rss-feed-parser.git"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "scripts": {
+    "push": "npx @open-sauced/conventional-commit",
+    "db": "supabase",
+    "db:start": "npm run db -- start",
+    "db:changes": "npm run db -- db changes",
+    "db:commit": "npm run db -- db commit -- ",
+    "db:reset": "npm run db -- db reset",
+    "db:push": "npm run db -- db push",
+    "start": "node --experimental-json-modules ./src",
+    "start:dev": "node --experimental-json-modules -r dotenv/config ./src",
+    "lint": "eslint --report-unused-disable-directives .",
+    "format": "npm run lint -- --fix"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^1.29.4",
+    "cfonts": "^2.10.0",
+    "chalk": "^5.0.0",
+    "octokit": "^1.7.1"
+  },
+  "devDependencies": {
+    "@open-sauced/check-engines": "^1.2.0",
+    "@open-sauced/conventional-commit": "^1.0.1",
+    "dotenv": "^14.3.0",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
