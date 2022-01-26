@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.0.1](https://github.com/0-vortex/rss-feed-parser/compare/v1.0.0...v1.0.1) (2022-01-26)
+
+
+### 🔥 Performance Improvements
+
+* squeeze out more release commits ([568375f](https://github.com/0-vortex/rss-feed-parser/commit/568375f04429c5aea3d95f60de599760521e3169))
+
 ## 1.0.0 (2022-01-25)
 
 
