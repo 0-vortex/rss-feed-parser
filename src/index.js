@@ -2,9 +2,9 @@ import { Octokit } from 'octokit';
 import { p } from '@antfu/utils';
 import {
   hero, header, log, warning, error,
-} from './lib/logger';
+} from './lib/logger.js';
 import cron from './cron.json';
-import { activityParser } from './lib/activity';
+import { activityParser } from './lib/activity.js';
 
 const offsetHours = parseInt(process.env.OFFSET_HOURS, 10) || 4;
 const offsetUsers = parseInt(process.env.OFFSET_USERS, 10) || 50;
@@ -12,12 +12,13 @@ const checked = { ...cron.checked };
 const lastExecuted = new Date();
 const parsedCache = {};
 const parseUsers = [];
+const parseEvents = [];
 
 // introduction block
 hero('0-vortex|RSS Feed');
 log(`Started execution at ${lastExecuted}`);
 
-for (const item in checked) {
+Object.entries(checked).forEach((item) => {
   const date = new Date(checked[item].lastExecuted);
   const diff = lastExecuted - date;
 
@@ -26,7 +27,7 @@ for (const item in checked) {
     ...checked[item],
     offsetHours: Number(diff / 1000 / 60 / 60).toFixed(0),
   };
-}
+});
 
 const run = async () => {
   const octokit = new Octokit({
@@ -82,7 +83,8 @@ const run = async () => {
     }
   }
 
-  log(parseUsers.length);
+  header('Parsing users')
+  log(`Existing user queue was ${parseUsers.length}`)
   for await (const user of parseUsers) {
     log(`Fetching events for user ${user.login}`);
 
@@ -90,8 +92,12 @@ const run = async () => {
       username: user.login,
     });
 
-    await p(events.data).map((event) => activityParser(event));
+    const insertEvents = await p(events.data).filter((event) => activityParser(event) || false);
+    parseEvents.push(...insertEvents);
+    warning('Fetched %d events, pushing to queue', insertEvents.length);
   }
+
+  log('Insert %d events', parseEvents.length);
 };
 
 await run();

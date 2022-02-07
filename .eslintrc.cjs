@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": [
+  extends: [
     "airbnb-base/legacy",
     "airbnb-base/whitespace",
   ],
@@ -21,5 +21,13 @@ module.exports = {
   rules: {
     "no-console": 0,
     "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "no-restricted-syntax": 0,
+    camelcase: [2, {
+      allow: [
+        "per_page",
+        "created_at"
+      ],
+    }]
   }
 };
