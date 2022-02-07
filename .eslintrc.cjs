@@ -26,7 +26,8 @@ module.exports = {
     camelcase: [2, {
       allow: [
         "per_page",
-        "created_at"
+        "created_at",
+        "anon_key"
       ],
     }]
   }

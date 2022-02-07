@@ -10,18 +10,25 @@ import { supabase } from './lib/supabase.js';
 const offsetHours = parseInt(process.env.OFFSET_HOURS, 10) || 4;
 const offsetUsers = parseInt(process.env.OFFSET_USERS, 10) || 50;
 const checked = { ...cron.checked };
-const lastExecuted = new Date();
+const currentExecution = {
+  lastExecuted: new Date(),
+  events: 0,
+  users: 0,
+  repos: 0,
+};
 const parsedCache = {};
 const parseUsers = [];
-const parseEvents = [];
+const insertEvents = [];
+let insertUsers = {};
+let insertRepos = {};
 
 // introduction block
 hero('0-vortex|RSS Feed');
-log(`Started execution at ${lastExecuted}`);
+log(`Started execution at ${currentExecution.lastExecuted}`);
 
 Object.entries(checked).forEach((item) => {
   const date = new Date(checked[item].lastExecuted);
-  const diff = lastExecuted - date;
+  const diff = currentExecution.lastExecuted - date;
 
   // generate a cache of items with offset dates
   parsedCache[item] = {
@@ -93,30 +100,81 @@ const run = async () => {
       username: user.login,
     });
 
-    const insertEvents = await p(events.data)
+    await p(events.data)
       .map((event) => {
         const filtered = activityParser(event);
         if (filtered !== null) {
-          console.log(filtered);
-          parseEvents.push(filtered);
+          insertEvents.push(filtered);
+          insertUsers[filtered.actor.id] = filtered.actor;
+          insertRepos[filtered.repo.id] = filtered.repo;
         }
       });
     warning('Fetched %d events, pushing to queue', insertEvents.length);
   }
 
-  log('Insert %d events', parseEvents.length);
-  const {error: err, data} = await supabase
-    .from('events')
-    .upsert(parseEvents, {
-      // returning: "minimal",
-      count: "exact",
-      onConflict: "id",
-      ignoreDuplicates: true,
-    });
+  // don't ask why this is synchronous
 
-  // log(err);
-  warning('Inserted %d new events', data.length);
+  // events insert block
+  await (async () => {
+    log('Attempt to insert %d events', insertEvents.length);
+    const { error: err, count } = await supabase
+      .from('events')
+      .upsert(insertEvents, {
+        // returning: "minimal",
+        count: 'exact',
+        onConflict: 'id',
+        ignoreDuplicates: true,
+      });
 
+    if (err) {
+      error('Error inserting events: %O', err);
+    } else {
+      warning('Inserted %d new events', count);
+      currentExecution.events = count;
+    }
+  })();
+
+  // users insert block
+  await (async () => {
+    insertUsers = Object.keys(insertUsers).map((k) => insertUsers[k]);
+    log('Attempt to insert %d users', insertUsers.length);
+    const { error: err, count } = await supabase
+      .from('users')
+      .upsert(insertUsers, {
+        // returning: "minimal",
+        count: 'exact',
+        onConflict: 'id',
+        ignoreDuplicates: true,
+      });
+
+    if (err) {
+      error('Error inserting users: %O', err);
+    } else {
+      warning('Inserted %d new users', count);
+      currentExecution.users = count;
+    }
+  })();
+
+  // repos insert block
+  await (async () => {
+    insertRepos = Object.keys(insertRepos).map((k) => insertRepos[k]);
+    log('Attempt to insert %d repos', insertRepos.length);
+    const { error: err, count } = await supabase
+      .from('repos')
+      .upsert(insertRepos, {
+        // returning: "minimal",
+        count: 'exact',
+        onConflict: 'id',
+        ignoreDuplicates: true,
+      });
+
+    if (err) {
+      error('Error inserting repos: %O', err);
+    } else {
+      warning('Inserted %d new repos', count);
+      currentExecution.repos = count;
+    }
+  })();
 };
 
 await run();
