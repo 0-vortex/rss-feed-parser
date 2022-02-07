@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.1.0](https://github.com/0-vortex/rss-feed-parser/compare/v1.0.1...v1.1.0) (2022-02-07)
+
+
+### 🍕 Features
+
+* add minimum viable event parsing ([25a0109](https://github.com/0-vortex/rss-feed-parser/commit/25a01097f50e77ab37ea86cc0147246ce84265d3))
+
 ### [1.0.1](https://github.com/0-vortex/rss-feed-parser/compare/v1.0.0...v1.0.1) (2022-01-26)
 
 
