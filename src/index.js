@@ -1,36 +1,97 @@
 import { Octokit } from 'octokit';
+import { p } from '@antfu/utils';
 import {
   hero, header, log, warning, error,
-} from './lib/logger.js';
+} from './lib/logger';
+import cron from './cron.json';
+import { activityParser } from './lib/activity';
 
+const offsetHours = parseInt(process.env.OFFSET_HOURS, 10) || 4;
+const offsetUsers = parseInt(process.env.OFFSET_USERS, 10) || 50;
+const checked = { ...cron.checked };
 const lastExecuted = new Date();
+const parsedCache = {};
+const parseUsers = [];
 
 // introduction block
 hero('0-vortex|RSS Feed');
 log(`Started execution at ${lastExecuted}`);
 
-const octokit = new Octokit({
-  auth: process.env.GITHUB_TOKEN,
-});
+for (const item in checked) {
+  const date = new Date(checked[item].lastExecuted);
+  const diff = lastExecuted - date;
 
-// user block
-header('Parsing logged user');
+  // generate a cache of items with offset dates
+  parsedCache[item] = {
+    ...checked[item],
+    offsetHours: Number(diff / 1000 / 60 / 60).toFixed(0),
+  };
+}
 
-const {
-  data: user,
-} = await octokit.rest.users.getAuthenticated();
-warning('%O', user);
+const run = async () => {
+  const octokit = new Octokit({
+    auth: process.env.GITHUB_TOKEN,
+  });
 
-// follow block
-header('Parsing following users');
+  // user block
+  header('Parsing logged user');
 
-const users = await octokit.paginate(
-  octokit.rest.users.listFollowedByAuthenticatedUser,
-  {
-    per_page: 100,
-  },
-  (response) => response.data,
-);
-error('Fetched %d users', users.length);
+  const {
+    data: runner,
+  } = await octokit.rest.users.getAuthenticated();
+  warning('%O', runner);
 
-// cache block
+  // follow block
+  header('Parsing following users');
+
+  const users = await octokit.paginate(
+    octokit.rest.users.listFollowedByAuthenticatedUser,
+    {
+      per_page: 100,
+    },
+    // implement cache here in pagination to avoid hitting the API
+    (response) => response.data,
+  );
+  warning('Fetched %d users', users.length);
+
+  // cache block
+  for (const user of users) {
+    if (typeof parsedCache[user.login] === 'undefined') {
+      warning(`${user.login} is not in our cache, adding to the queue`);
+      parseUsers.push(user);
+    } else {
+      // we have a local cache of this installation
+      let parsed = false;
+
+      if (
+        parsedCache[user.login].offsetHours >= offsetHours
+      ) {
+        parseUsers.push(user);
+        parsed = true;
+      }
+
+      const fn = parsed ? warning : log;
+
+      fn(`${user.login} has been checked ${
+        parsedCache[user.login].offsetHours} hours ago, ${parsed ? 'adding to the queue' : 'skipping'}`);
+    }
+
+    if (parseUsers.length >= offsetUsers) {
+      error('Queue is full, stop adding users to the stack');
+      break;
+    }
+  }
+
+  log(parseUsers.length);
+  for await (const user of parseUsers) {
+    log(`Fetching events for user ${user.login}`);
+
+    const events = await octokit.rest.activity.listPublicEventsForUser({
+      username: user.login,
+    });
+
+    await p(events.data).map((event) => activityParser(event));
+  }
+};
+
+await run();
