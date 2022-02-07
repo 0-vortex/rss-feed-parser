@@ -5,6 +5,15 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.2.0](https://github.com/0-vortex/rss-feed-parser/compare/v1.1.0...v1.2.0) (2022-02-07)
+
+
+### 🍕 Features
+
+* add events payload and users feedback ([c8dc804](https://github.com/0-vortex/rss-feed-parser/commit/c8dc80472e47274208bae97c6937a1e25ef10dc9))
+* add events table ([7c7649d](https://github.com/0-vortex/rss-feed-parser/commit/7c7649dd64956e71c947028054d36e228eb0bce3))
+* insert users and repos to the timeline correctly ([88b46e5](https://github.com/0-vortex/rss-feed-parser/commit/88b46e56e9ff0f046345783b1ecc181d106c7fda))
+
 ## [1.1.0](https://github.com/0-vortex/rss-feed-parser/compare/v1.0.1...v1.1.0) (2022-02-07)
 
 
