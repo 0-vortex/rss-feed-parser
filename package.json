@@ -24,6 +24,7 @@
     "push": "npx @open-sauced/conventional-commit",
     "db": "supabase",
     "db:start": "npm run db -- start",
+    "db:stop": "npm run db -- stop",
     "db:changes": "npm run db -- db changes",
     "db:commit": "npm run db -- db commit -- ",
     "db:reset": "npm run db -- db reset",

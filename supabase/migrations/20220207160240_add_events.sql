@@ -5,11 +5,11 @@
 
 CREATE TABLE IF NOT EXISTS public.events
 (
-    id bigint NOT NULL,
+    id bigint,
     type text COLLATE pg_catalog."default" NOT NULL,
-    actor json NOT NULL,
-    repo json NOT NULL,
-    payload json,
+    actor jsonb NOT NULL,
+    repo jsonb NOT NULL,
+    payload jsonb,
     created_at timestamp with time zone NOT NULL,
     CONSTRAINT events_pkey PRIMARY KEY (id)
 )

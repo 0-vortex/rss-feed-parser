@@ -5,6 +5,7 @@ import {
 } from './lib/logger.js';
 import cron from './cron.json';
 import { activityParser } from './lib/activity.js';
+import { supabase } from './lib/supabase.js';
 
 const offsetHours = parseInt(process.env.OFFSET_HOURS, 10) || 4;
 const offsetUsers = parseInt(process.env.OFFSET_USERS, 10) || 50;
@@ -83,8 +84,8 @@ const run = async () => {
     }
   }
 
-  header('Parsing users')
-  log(`Existing user queue was ${parseUsers.length}`)
+  header('Parsing users');
+  log(`Existing user queue was ${parseUsers.length}`);
   for await (const user of parseUsers) {
     log(`Fetching events for user ${user.login}`);
 
@@ -92,12 +93,30 @@ const run = async () => {
       username: user.login,
     });
 
-    const insertEvents = await p(events.data).filter((event) => activityParser(event) || false);
-    parseEvents.push(...insertEvents);
+    const insertEvents = await p(events.data)
+      .map((event) => {
+        const filtered = activityParser(event);
+        if (filtered !== null) {
+          console.log(filtered);
+          parseEvents.push(filtered);
+        }
+      });
     warning('Fetched %d events, pushing to queue', insertEvents.length);
   }
 
   log('Insert %d events', parseEvents.length);
+  const {error: err, data} = await supabase
+    .from('events')
+    .upsert(parseEvents, {
+      // returning: "minimal",
+      count: "exact",
+      onConflict: "id",
+      ignoreDuplicates: true,
+    });
+
+  // log(err);
+  warning('Inserted %d new events', data.length);
+
 };
 
 await run();
