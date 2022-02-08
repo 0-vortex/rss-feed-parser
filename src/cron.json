@@ -1,8 +1,8 @@
 {
   "lastExecution": {
-    "lastExecuted": "2022-02-08T17:56:34.030Z",
-    "events": 0,
-    "users": 0,
+    "lastExecuted": "2022-02-08T18:03:45.636Z",
+    "events": 2,
+    "users": 1,
     "repos": 0
   },
   "checked": {
@@ -2329,6 +2329,10 @@
     "donmccurdy": {
       "owner": "donmccurdy",
       "lastExecuted": "2022-02-08T04:00:42.622Z"
+    },
+    "lance": {
+      "owner": "lance",
+      "lastExecuted": "2022-02-08T18:03:45.636Z"
     }
   }
 }
