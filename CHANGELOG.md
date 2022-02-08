@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.3.2](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.1...v1.3.2) (2022-02-08)
+
+
+### 🔁 Continuous Integration
+
+* add elevated token for octokit integration ([b5f2762](https://github.com/0-vortex/rss-feed-parser/commit/b5f276203745c480b6e538494e63750989c272b0))
+
 ### [1.3.1](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.0...v1.3.1) (2022-02-08)
 
 
