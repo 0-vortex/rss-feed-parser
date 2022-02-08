@@ -1,5 +1,6 @@
 import { Octokit } from 'octokit';
 import { p } from '@antfu/utils';
+import { writeFile } from 'node:fs/promises';
 import {
   hero, header, log, warning, error,
 } from './lib/logger.js';
@@ -26,7 +27,7 @@ let insertRepos = {};
 hero('0-vortex|RSS Feed');
 log(`Started execution at ${currentExecution.lastExecuted}`);
 
-Object.entries(checked).forEach((item) => {
+Object.keys(checked).map((item) => {
   const date = new Date(checked[item].lastExecuted);
   const diff = currentExecution.lastExecuted - date;
 
@@ -100,6 +101,7 @@ const run = async () => {
       username: user.login,
     });
 
+    const prevLength = insertEvents.length;
     await p(events.data)
       .map((event) => {
         const filtered = activityParser(event);
@@ -109,10 +111,12 @@ const run = async () => {
           insertRepos[filtered.repo.id] = filtered.repo;
         }
       });
-    warning('Fetched %d events, pushing to queue', insertEvents.length);
+
+    warning('Fetched %d events, pushing to queue', insertEvents.length - prevLength);
   }
 
   // don't ask why this is synchronous
+  header('Pushing data');
 
   // events insert block
   await (async () => {
@@ -138,7 +142,7 @@ const run = async () => {
   await (async () => {
     insertUsers = Object.keys(insertUsers).map((k) => insertUsers[k]);
     log('Attempt to insert %d users', insertUsers.length);
-    const { error: err, count } = await supabase
+    const { error: err, data, count } = await supabase
       .from('users')
       .upsert(insertUsers, {
         // returning: "minimal",
@@ -151,6 +155,14 @@ const run = async () => {
       error('Error inserting users: %O', err);
     } else {
       warning('Inserted %d new users', count);
+
+      data.forEach((user) => {
+        checked[user.login] = {
+          owner: user.login,
+          lastExecuted: currentExecution.lastExecuted,
+        };
+      });
+
       currentExecution.users = count;
     }
   })();
@@ -175,6 +187,18 @@ const run = async () => {
       currentExecution.repos = count;
     }
   })();
+
+  // check whether we have new data to cache
+  header('Versioning changes');
+
+  // write to file and commit block
+  await writeFile('./src/cron.json', JSON.stringify({
+    lastExecution: currentExecution,
+    checked,
+  }, null, 2));
+  warning('Wrote changes to cron.json, make sure to commit this file');
+
+  header('Finished');
 };
 
 await run();

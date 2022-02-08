@@ -1,0 +1,44 @@
+name: Parse the RSS Feed
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: environment-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  parse-the-feed:
+    name: run update
+    runs-on: ubuntu-latest
+    steps:
+      - name: "☁️ checkout repository"
+        uses: actions/checkout@v2
+
+      - name: "🔧 setup node"
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 16
+
+      - name: "🔧 install npm@latest"
+        run: npm i -g npm@latest
+
+      - name: "📦 install dependencies"
+        uses: bahmutov/npm-install@v1
+
+      - name: "🔍 parse rss feed"
+        run: npm run start
+        env:
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          OFFSET_HOURS: 4
+          OFFSET_USERS: 50
+
+      - name: "🚀 Commit changes"
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          file_pattern: ./src/*.json
+          commit_message: "chore: update feed data [skip ci]"
+          commit_user_name: 0-vortex
+          commit_user_email: 237133+0-vortex@users.noreply.github.com
