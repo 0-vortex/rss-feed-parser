@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.3.1](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.0...v1.3.1) (2022-02-08)
+
+
+### 🐛 Bug Fixes
+
+* correctly pass github token to feed workflow ([30f89bb](https://github.com/0-vortex/rss-feed-parser/commit/30f89bb703e805d700d480653384f96119738bf3))
+
 ## [1.3.0](https://github.com/0-vortex/rss-feed-parser/compare/v1.2.0...v1.3.0) (2022-02-08)
 
 
