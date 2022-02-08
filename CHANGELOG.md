@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.3.0](https://github.com/0-vortex/rss-feed-parser/compare/v1.2.0...v1.3.0) (2022-02-08)
+
+
+### 🍕 Features
+
+* add ci feed parser utility ([e1ff5bc](https://github.com/0-vortex/rss-feed-parser/commit/e1ff5bc6276c1292b87d9262a7ea4bd8e7c2cb74))
+
 ## [1.2.0](https://github.com/0-vortex/rss-feed-parser/compare/v1.1.0...v1.2.0) (2022-02-07)
 
 
