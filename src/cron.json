@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2022-02-16T09:27:02.927Z",
-    "events": 0,
-    "users": 0,
-    "repos": 0
+    "lastExecuted": "2022-02-16T09:33:44.179Z",
+    "events": 1,
+    "users": 1,
+    "repos": 1
   },
   "checked": {
     "mojombo": {
@@ -2333,6 +2333,10 @@
     "lance": {
       "owner": "lance",
       "lastExecuted": "2022-02-08T18:03:45.636Z"
+    },
+    "dommmel": {
+      "owner": "dommmel",
+      "lastExecuted": "2022-02-16T09:33:44.179Z"
     }
   }
 }
