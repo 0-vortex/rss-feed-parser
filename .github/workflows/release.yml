@@ -68,7 +68,7 @@ jobs:
 
       - name: "🚀 release"
         id: semantic-release
-        uses: open-sauced/semantic-release-conventional-config@v3
+        uses: open-sauced/release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_COMMITTER_NAME: 0-vortex
