@@ -27,7 +27,7 @@ let insertRepos = {};
 hero('0-vortex|RSS Feed');
 log(`Started execution at ${currentExecution.lastExecuted}`);
 
-Object.keys(checked).map((item) => {
+Object.keys(checked).forEach((item) => {
   const date = new Date(checked[item].lastExecuted);
   const diff = currentExecution.lastExecuted - date;
 
@@ -109,7 +109,10 @@ const run = async () => {
           insertEvents.push(filtered);
           insertUsers[filtered.actor.id] = filtered.actor;
           insertRepos[filtered.repo.id] = filtered.repo;
+          return filtered;
         }
+
+        return false;
       });
 
     warning('Fetched %d events, pushing to queue', insertEvents.length - prevLength);

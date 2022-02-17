@@ -10,7 +10,14 @@ module.exports = {
   globals: {
     module: true
   },
+  parser: "@babel/eslint-parser",
   parserOptions: {
+    babelOptions: {
+      plugins: [
+        '@babel/plugin-syntax-import-assertions'
+      ],
+    },
+    requireConfigFile: false,
     ecmaVersion: 13,
     ecmaFeatures: {
       impliedStrict: true

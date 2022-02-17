@@ -42,6 +42,8 @@
     "octokit": "^1.7.1"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/plugin-syntax-import-assertions": "^7.16.7",
     "@open-sauced/check-engines": "^1.2.0",
     "@open-sauced/conventional-commit": "^1.0.1",
     "dotenv": "^16.0.0",
