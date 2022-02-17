@@ -5,6 +5,18 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.3.3](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.2...v1.3.3) (2022-02-17)
+
+
+### 🐛 Bug Fixes
+
+* correct import assert ([9bc2aef](https://github.com/0-vortex/rss-feed-parser/commit/9bc2aeff411723516f307570ebff20250ff2e962))
+
+
+### 🎨 Styles
+
+* correct eslint configuration ([4815377](https://github.com/0-vortex/rss-feed-parser/commit/4815377adafe5d2d82f4bf330e4f66d2e23a008a))
+
 ### [1.3.2](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.1...v1.3.2) (2022-02-08)
 
 
