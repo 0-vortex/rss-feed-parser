@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2022-09-09T20:54:54.778Z",
-    "events": 0,
-    "users": 0,
-    "repos": 0
+    "lastExecuted": "2022-09-09T21:01:24.572Z",
+    "events": 10,
+    "users": 1,
+    "repos": 2
   },
   "checked": {
     "mojombo": {
@@ -2341,6 +2341,10 @@
     "MadRabbit": {
       "owner": "MadRabbit",
       "lastExecuted": "2022-03-23T23:45:23.782Z"
+    },
+    "jakobo": {
+      "owner": "jakobo",
+      "lastExecuted": "2022-09-09T21:01:24.572Z"
     }
   }
 }
