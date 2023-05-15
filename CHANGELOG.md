@@ -5,6 +5,24 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.3.5](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.4...v1.3.5) (2023-05-15)
+
+
+### 🐛 Bug Fixes
+
+* corect parser update deps ([39edea0](https://github.com/0-vortex/rss-feed-parser/commit/39edea09c76409e5934cc144723317634f6bfaca))
+
+
+### ✅ Tests
+
+* debug user root casue ([740eec8](https://github.com/0-vortex/rss-feed-parser/commit/740eec84bb68eb97202dd50e5bc6a90015a5fe43))
+* switch to esm semantic-release ([5f4d3a3](https://github.com/0-vortex/rss-feed-parser/commit/5f4d3a3ab41c5a032b73a2ca4865defcb6aff9d2))
+* test safe directory inside container ([bf03c87](https://github.com/0-vortex/rss-feed-parser/commit/bf03c876bfec7ae52d069df17d575e104d83443c))
+* test unsafe git version ([b7edd51](https://github.com/0-vortex/rss-feed-parser/commit/b7edd515b5861db73ac33a0e083c5b16d74c326f))
+* try out correct usermod docker action ([f929c41](https://github.com/0-vortex/rss-feed-parser/commit/f929c41f1522265d60b99ed0d31251f7b191e459))
+* use new action restored version ([7a99b1f](https://github.com/0-vortex/rss-feed-parser/commit/7a99b1f95115bf117f1385f2ad62203f55b91a96))
+* use new root level actions ([e78020e](https://github.com/0-vortex/rss-feed-parser/commit/e78020ee9e0eb1dbb55017a83c8344bc34ed19e6))
+
 ### [1.3.4](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.3...v1.3.4) (2023-05-15)
 
 
