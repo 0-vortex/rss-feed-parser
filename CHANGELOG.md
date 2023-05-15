@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.3.6](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.5...v1.3.6) (2023-05-15)
+
+
+### ✅ Tests
+
+* try out different base image ([0f36ca2](https://github.com/0-vortex/rss-feed-parser/commit/0f36ca2b86915e78a9eecbed711b484a7df02829))
+
 ### [1.3.5](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.4...v1.3.5) (2023-05-15)
 
 
