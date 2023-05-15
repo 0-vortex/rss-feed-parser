@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.3.10](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.9...v1.3.10) (2023-05-15)
+
+
+### ✅ Tests
+
+* test semantic@21 ([e561098](https://github.com/0-vortex/rss-feed-parser/commit/e561098caad6b1a29f3477e6da7aff7e607b12de))
+
 ### [1.3.9](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.8...v1.3.9) (2023-05-15)
 
 
