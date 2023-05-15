@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.3.9](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.8...v1.3.9) (2023-05-15)
+
+
+### 🔁 Continuous Integration
+
+* attempt to correct last action ([9a3f44a](https://github.com/0-vortex/rss-feed-parser/commit/9a3f44aa983557666b84b2d88a395a74be3a61cd))
+
 ### [1.3.8](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.7...v1.3.8) (2023-05-15)
 
 
