@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: "🔧 setup node"
-        uses: actions/setup-node@v2.1.5
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
@@ -61,14 +61,14 @@ jobs:
 
       - name: "📂 download diagram artifacts"
         if: needs.build.outputs.build-artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: diagram
           path: .
 
       - name: "🚀 release"
         id: semantic-release
-        uses: 0-vortex/open-sauced-semantic-config-test@v10.0.11
+        uses: 0-vortex/open-sauced-semantic-config-test@v10.0.12
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_COMMITTER_NAME: 0-vortex
@@ -81,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "♻️ remove build artifacts"
-        uses: geekyeggo/delete-artifact@v1
+        uses: geekyeggo/delete-artifact@v2
         with:
           name: |
             diagram
