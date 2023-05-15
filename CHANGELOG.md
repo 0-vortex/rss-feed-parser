@@ -5,6 +5,19 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.3.7](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.6...v1.3.7) (2023-05-15)
+
+
+### ✅ Tests
+
+* attempt full skeleton original build ([782b692](https://github.com/0-vortex/rss-feed-parser/commit/782b6922308aecaa38cab9e0c3c10b6bf33c2486))
+* use final build ([79b921e](https://github.com/0-vortex/rss-feed-parser/commit/79b921ebc2cb64c22ae9506b7cb834d1c1de006c))
+
+
+### 🔁 Continuous Integration
+
+* test final configuration ([6c38544](https://github.com/0-vortex/rss-feed-parser/commit/6c385441463553bd8379d3a30cc25aef608fb680))
+
 ### [1.3.6](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.5...v1.3.6) (2023-05-15)
 
 
