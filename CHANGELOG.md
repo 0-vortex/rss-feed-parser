@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.3.8](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.7...v1.3.8) (2023-05-15)
+
+
+### 🔁 Continuous Integration
+
+* update github actions workflow versions ([687d39c](https://github.com/0-vortex/rss-feed-parser/commit/687d39c73c6876b4752e9de46bd5b9cd0b77a2d8))
+
 ### [1.3.7](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.6...v1.3.7) (2023-05-15)
 
 
