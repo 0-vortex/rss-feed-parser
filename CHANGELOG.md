@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.3.12](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.11...v1.3.12) (2023-05-16)
+
+
+### ✅ Tests
+
+* try out next open-sauced release action ([5478b9b](https://github.com/0-vortex/rss-feed-parser/commit/5478b9b174e3e009c7220c9a0018bbdb43e26fa2))
+
 ## [1.3.11](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.10...v1.3.11) (2023-05-16)
 
 
