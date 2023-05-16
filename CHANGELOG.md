@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.3.11](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.10...v1.3.11) (2023-05-16)
+
+
+### ✅ Tests
+
+* go with esm semantic-release ([820c99e](https://github.com/0-vortex/rss-feed-parser/commit/820c99e5da4cdf9db7bea354b7dceddffdb95c3d))
+
 ## [1.3.10](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.9...v1.3.10) (2023-05-15)
 
 
