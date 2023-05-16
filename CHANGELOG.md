@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.3.13](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.12...v1.3.13) (2023-05-16)
+
+
+### ✅ Tests
+
+* use new major version tagger version ([d9cadf4](https://github.com/0-vortex/rss-feed-parser/commit/d9cadf495c76e57d08e145a43b0472f06aeae4d7))
+
 ## [1.3.12](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.11...v1.3.12) (2023-05-16)
 
 
