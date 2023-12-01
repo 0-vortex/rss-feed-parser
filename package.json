@@ -35,20 +35,20 @@
     "format": "npm run lint -- --fix"
   },
   "dependencies": {
-    "@antfu/utils": "^0.5.0",
-    "@supabase/supabase-js": "^1.30.3",
+    "@antfu/utils": "^0.7.6",
+    "@supabase/supabase-js": "^2.39.0",
     "cfonts": "^2.10.0",
-    "chalk": "^5.0.0",
+    "chalk": "^5.3.0",
     "octokit": "^1.7.1"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
-    "@babel/plugin-syntax-import-assertions": "^7.16.7",
+    "@babel/eslint-parser": "^7.23.3",
+    "@babel/plugin-syntax-import-assertions": "^7.23.3",
     "@open-sauced/check-engines": "^1.2.0",
     "@open-sauced/conventional-commit": "^1.0.1",
-    "dotenv": "^16.0.0",
-    "eslint": "^8.9.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.54.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.4"
+    "eslint-plugin-import": "^2.29.0"
   }
 }
