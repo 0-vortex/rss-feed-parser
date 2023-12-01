@@ -5,6 +5,18 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.3.15](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.14...v1.3.15) (2023-12-01)
+
+
+### 🐛 Bug Fixes
+
+* correct user timestamp execution time ([3b9a0d6](https://github.com/0-vortex/rss-feed-parser/commit/3b9a0d6a8d8275f45685431b5c02ce0d5142ec62))
+
+
+### 🤖 Build System
+
+* update dependencios ([cd7627a](https://github.com/0-vortex/rss-feed-parser/commit/cd7627a261d52b6b972fcc6a29e10b1d53a85b2e))
+
 ## [1.3.14](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.13...v1.3.14) (2023-05-16)
 
 
