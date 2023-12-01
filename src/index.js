@@ -159,7 +159,7 @@ const run = async () => {
     } else {
       warning('Inserted %d new users', count);
 
-      data.forEach((user) => {
+      insertUsers.forEach((user) => {
         checked[user.login] = {
           owner: user.login,
           lastExecuted: currentExecution.lastExecuted,
