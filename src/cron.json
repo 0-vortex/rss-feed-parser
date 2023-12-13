@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2023-12-13T16:35:37.518Z",
-    "events": 17,
+    "lastExecuted": "2023-12-13T16:42:44.246Z",
+    "events": 1,
     "users": 0,
-    "repos": 4
+    "repos": 0
   },
   "checked": {
     "mojombo": {
@@ -1328,11 +1328,11 @@
     },
     "ret2libc": {
       "owner": "ret2libc",
-      "lastExecuted": "2023-12-13T13:05:04.977Z"
+      "lastExecuted": "2023-12-13T16:42:44.246Z"
     },
     "juanfranblanco": {
       "owner": "juanfranblanco",
-      "lastExecuted": "2023-12-13T13:05:04.977Z"
+      "lastExecuted": "2023-12-13T16:42:44.246Z"
     },
     "paulmillr": {
       "owner": "paulmillr",
@@ -1380,7 +1380,7 @@
     },
     "merryt": {
       "owner": "merryt",
-      "lastExecuted": "2023-12-13T05:03:32.126Z"
+      "lastExecuted": "2023-12-13T16:42:44.246Z"
     },
     "cookiengineer": {
       "owner": "cookiengineer",
