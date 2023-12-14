@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2023-12-14T22:36:04.041Z",
-    "events": 11,
+    "lastExecuted": "2023-12-14T22:42:16.488Z",
+    "events": 1,
     "users": 0,
-    "repos": 0
+    "repos": 1
   },
   "checked": {
     "mojombo": {
@@ -1312,15 +1312,15 @@
     },
     "transitive-bullshit": {
       "owner": "transitive-bullshit",
-      "lastExecuted": "2023-12-14T18:54:35.633Z"
+      "lastExecuted": "2023-12-14T22:42:16.488Z"
     },
     "BinRoot": {
       "owner": "BinRoot",
-      "lastExecuted": "2023-12-14T18:54:35.633Z"
+      "lastExecuted": "2023-12-14T22:42:16.488Z"
     },
     "obmarg": {
       "owner": "obmarg",
-      "lastExecuted": "2023-12-14T18:54:35.633Z"
+      "lastExecuted": "2023-12-14T22:42:16.488Z"
     },
     "impressivewebs": {
       "owner": "impressivewebs",
@@ -1328,7 +1328,7 @@
     },
     "ret2libc": {
       "owner": "ret2libc",
-      "lastExecuted": "2023-12-14T18:54:35.633Z"
+      "lastExecuted": "2023-12-14T22:42:16.488Z"
     },
     "juanfranblanco": {
       "owner": "juanfranblanco",
@@ -2536,7 +2536,7 @@
     },
     "foxyblocks": {
       "owner": "foxyblocks",
-      "lastExecuted": "2023-12-14T18:54:35.633Z"
+      "lastExecuted": "2023-12-14T22:42:16.488Z"
     },
     "tibi-p": {
       "owner": "tibi-p",
