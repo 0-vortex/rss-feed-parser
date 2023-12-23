@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.3.16](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.15...v1.3.16) (2023-12-23)
+
+
+### 🐛 Bug Fixes
+
+* add proper action timeout ([2d580a4](https://github.com/0-vortex/rss-feed-parser/commit/2d580a47f639313581b80f27347254fe4df0c0d6))
+
 ## [1.3.15](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.14...v1.3.15) (2023-12-01)
 
 
