@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2023-12-25T03:40:21.407Z",
-    "events": 1,
+    "lastExecuted": "2023-12-25T03:46:32.776Z",
+    "events": 2,
     "users": 0,
-    "repos": 0
+    "repos": 1
   },
   "checked": {
     "mojombo": {
@@ -1308,15 +1308,15 @@
     },
     "poljar": {
       "owner": "poljar",
-      "lastExecuted": "2023-12-24T21:48:06.935Z"
+      "lastExecuted": "2023-12-25T03:46:32.776Z"
     },
     "transitive-bullshit": {
       "owner": "transitive-bullshit",
-      "lastExecuted": "2023-12-24T21:48:06.935Z"
+      "lastExecuted": "2023-12-25T03:46:32.776Z"
     },
     "BinRoot": {
       "owner": "BinRoot",
-      "lastExecuted": "2023-12-24T21:48:06.935Z"
+      "lastExecuted": "2023-12-25T03:46:32.776Z"
     },
     "obmarg": {
       "owner": "obmarg",
@@ -1328,11 +1328,11 @@
     },
     "ret2libc": {
       "owner": "ret2libc",
-      "lastExecuted": "2023-12-24T21:48:06.935Z"
+      "lastExecuted": "2023-12-25T03:46:32.776Z"
     },
     "juanfranblanco": {
       "owner": "juanfranblanco",
-      "lastExecuted": "2023-12-24T22:00:39.263Z"
+      "lastExecuted": "2023-12-25T03:46:32.776Z"
     },
     "paulmillr": {
       "owner": "paulmillr",
@@ -2536,7 +2536,7 @@
     },
     "foxyblocks": {
       "owner": "foxyblocks",
-      "lastExecuted": "2023-12-24T21:48:06.935Z"
+      "lastExecuted": "2023-12-25T03:46:32.776Z"
     },
     "tibi-p": {
       "owner": "tibi-p",
