@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2024-01-17T22:53:40.611Z",
-    "events": 12,
+    "lastExecuted": "2024-01-17T22:59:59.753Z",
+    "events": 0,
     "users": 0,
-    "repos": 2
+    "repos": 0
   },
   "checked": {
     "mojombo": {
@@ -1288,11 +1288,11 @@
     },
     "banga": {
       "owner": "banga",
-      "lastExecuted": "2024-01-17T19:15:17.245Z"
+      "lastExecuted": "2024-01-17T22:59:59.753Z"
     },
     "leolabs": {
       "owner": "leolabs",
-      "lastExecuted": "2024-01-17T19:15:17.245Z"
+      "lastExecuted": "2024-01-17T22:59:59.753Z"
     },
     "kostko": {
       "owner": "kostko",
@@ -1328,7 +1328,7 @@
     },
     "ret2libc": {
       "owner": "ret2libc",
-      "lastExecuted": "2024-01-17T19:27:39.260Z"
+      "lastExecuted": "2024-01-17T22:59:59.753Z"
     },
     "juanfranblanco": {
       "owner": "juanfranblanco",
