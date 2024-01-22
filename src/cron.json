@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2024-01-22T18:40:02.713Z",
-    "events": 0,
+    "lastExecuted": "2024-01-22T18:46:13.651Z",
+    "events": 8,
     "users": 0,
-    "repos": 0
+    "repos": 2
   },
   "checked": {
     "mojombo": {
@@ -1172,15 +1172,15 @@
     },
     "refset": {
       "owner": "refset",
-      "lastExecuted": "2024-01-22T15:06:18.067Z"
+      "lastExecuted": "2024-01-22T18:46:13.651Z"
     },
     "nikoheikkila": {
       "owner": "nikoheikkila",
-      "lastExecuted": "2024-01-22T15:06:18.067Z"
+      "lastExecuted": "2024-01-22T18:46:13.651Z"
     },
     "philipp-spiess": {
       "owner": "philipp-spiess",
-      "lastExecuted": "2024-01-22T15:06:18.067Z"
+      "lastExecuted": "2024-01-22T18:46:13.651Z"
     },
     "thanpolas": {
       "owner": "thanpolas",
@@ -2516,7 +2516,7 @@
     },
     "BurntSushi": {
       "owner": "BurntSushi",
-      "lastExecuted": "2024-01-22T15:06:18.067Z"
+      "lastExecuted": "2024-01-22T18:46:13.651Z"
     },
     "altryne": {
       "owner": "altryne",
