@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2024-02-09T22:33:49.484Z",
-    "events": 14,
+    "lastExecuted": "2024-02-09T22:39:52.227Z",
+    "events": 5,
     "users": 0,
-    "repos": 2
+    "repos": 1
   },
   "checked": {
     "mojombo": {
@@ -1320,15 +1320,15 @@
     },
     "obmarg": {
       "owner": "obmarg",
-      "lastExecuted": "2024-02-09T18:54:11.899Z"
+      "lastExecuted": "2024-02-09T22:39:52.227Z"
     },
     "impressivewebs": {
       "owner": "impressivewebs",
-      "lastExecuted": "2024-02-09T18:54:11.899Z"
+      "lastExecuted": "2024-02-09T22:39:52.227Z"
     },
     "ret2libc": {
       "owner": "ret2libc",
-      "lastExecuted": "2024-02-09T18:54:11.899Z"
+      "lastExecuted": "2024-02-09T22:39:52.227Z"
     },
     "juanfranblanco": {
       "owner": "juanfranblanco",
@@ -2536,7 +2536,7 @@
     },
     "foxyblocks": {
       "owner": "foxyblocks",
-      "lastExecuted": "2024-02-09T18:54:11.899Z"
+      "lastExecuted": "2024-02-09T22:39:52.227Z"
     },
     "tibi-p": {
       "owner": "tibi-p",
