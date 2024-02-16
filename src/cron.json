@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2024-02-16T13:48:05.620Z",
-    "events": 4,
+    "lastExecuted": "2024-02-16T13:54:12.210Z",
+    "events": 1,
     "users": 0,
-    "repos": 0
+    "repos": 1
   },
   "checked": {
     "mojombo": {
@@ -1320,11 +1320,11 @@
     },
     "obmarg": {
       "owner": "obmarg",
-      "lastExecuted": "2024-02-16T09:28:32.114Z"
+      "lastExecuted": "2024-02-16T13:54:12.210Z"
     },
     "impressivewebs": {
       "owner": "impressivewebs",
-      "lastExecuted": "2024-02-16T08:52:25.742Z"
+      "lastExecuted": "2024-02-16T13:54:12.210Z"
     },
     "ret2libc": {
       "owner": "ret2libc",
