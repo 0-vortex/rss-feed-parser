@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2024-02-26T05:53:26.490Z",
-    "events": 0,
+    "lastExecuted": "2024-02-26T05:59:47.742Z",
+    "events": 2,
     "users": 0,
-    "repos": 0
+    "repos": 2
   },
   "checked": {
     "mojombo": {
@@ -1328,7 +1328,7 @@
     },
     "ret2libc": {
       "owner": "ret2libc",
-      "lastExecuted": "2024-02-19T23:50:41.110Z"
+      "lastExecuted": "2024-02-26T05:59:47.742Z"
     },
     "juanfranblanco": {
       "owner": "juanfranblanco",
