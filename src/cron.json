@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2024-08-04T22:42:28.757Z",
-    "events": 7,
+    "lastExecuted": "2024-08-04T22:48:46.293Z",
+    "events": 1,
     "users": 0,
-    "repos": 0
+    "repos": 1
   },
   "checked": {
     "mojombo": {
@@ -1172,7 +1172,7 @@
     },
     "refset": {
       "owner": "refset",
-      "lastExecuted": "2024-08-04T19:00:15.695Z"
+      "lastExecuted": "2024-08-04T22:48:46.293Z"
     },
     "nikoheikkila": {
       "owner": "nikoheikkila",
@@ -2516,7 +2516,7 @@
     },
     "BurntSushi": {
       "owner": "BurntSushi",
-      "lastExecuted": "2024-08-04T19:00:15.695Z"
+      "lastExecuted": "2024-08-04T22:48:46.293Z"
     },
     "altryne": {
       "owner": "altryne",
