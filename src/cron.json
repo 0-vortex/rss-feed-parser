@@ -1,8 +1,8 @@
 {
   "lastExecution": {
-    "lastExecuted": "2024-08-10T21:23:48.244Z",
-    "events": 6,
-    "users": 0,
+    "lastExecuted": "2024-08-10T21:31:18.779Z",
+    "events": 17,
+    "users": 1,
     "repos": 1
   },
   "checked": {
@@ -840,7 +840,7 @@
     },
     "jheer": {
       "owner": "jheer",
-      "lastExecuted": "2024-08-10T17:59:56.693Z"
+      "lastExecuted": "2024-08-10T21:31:18.779Z"
     },
     "danburzo": {
       "owner": "danburzo",
@@ -1144,15 +1144,15 @@
     },
     "jasnell": {
       "owner": "jasnell",
-      "lastExecuted": "2024-08-10T17:29:44.313Z"
+      "lastExecuted": "2024-08-10T21:31:18.779Z"
     },
     "mischah": {
       "owner": "mischah",
-      "lastExecuted": "2024-08-10T17:29:44.313Z"
+      "lastExecuted": "2024-08-10T21:31:18.779Z"
     },
     "mdnmdn": {
       "owner": "mdnmdn",
-      "lastExecuted": "2024-08-10T17:29:44.313Z"
+      "lastExecuted": "2024-08-10T21:31:18.779Z"
     },
     "theicfire": {
       "owner": "theicfire",
@@ -2512,7 +2512,7 @@
     },
     "lutzroeder": {
       "owner": "lutzroeder",
-      "lastExecuted": "2024-08-10T17:29:44.313Z"
+      "lastExecuted": "2024-08-10T21:31:18.779Z"
     },
     "BurntSushi": {
       "owner": "BurntSushi",
@@ -3197,6 +3197,10 @@
     "cexbrayat": {
       "owner": "cexbrayat",
       "lastExecuted": "2024-08-10T19:57:10.383Z"
+    },
+    "maveonair": {
+      "owner": "maveonair",
+      "lastExecuted": "2024-08-10T21:31:18.779Z"
     }
   }
 }
