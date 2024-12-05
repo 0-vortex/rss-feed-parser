@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2024-12-05T09:57:28.168Z",
-    "events": 14,
+    "lastExecuted": "2024-12-05T10:06:52.546Z",
+    "events": 0,
     "users": 0,
-    "repos": 4
+    "repos": 0
   },
   "checked": {
     "mojombo": {
@@ -1324,7 +1324,7 @@
     },
     "impressivewebs": {
       "owner": "impressivewebs",
-      "lastExecuted": "2024-11-23T05:55:26.404Z"
+      "lastExecuted": "2024-12-05T10:06:52.546Z"
     },
     "ret2libc": {
       "owner": "ret2libc",
