@@ -4,7 +4,7 @@ import { writeFile } from 'node:fs/promises';
 import {
   hero, header, log, warning, error,
 } from './lib/logger.js';
-import cron from './cron.json' assert { type: 'json' };
+import cron from './cron.json' with { type: 'json' };
 import { activityParser } from './lib/activity.js';
 import { supabase } from './lib/supabase.js';
 
