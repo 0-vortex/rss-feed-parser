@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.3.17](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.16...v1.3.17) (2024-12-17)
+
+
+### 🔁 Continuous Integration
+
+* adjust github workflows for 2024 ([f63e68b](https://github.com/0-vortex/rss-feed-parser/commit/f63e68b5255270101abef098b85f086097fc13d9))
+
 ## [1.3.16](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.15...v1.3.16) (2023-12-23)
 
 
