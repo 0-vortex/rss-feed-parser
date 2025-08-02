@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2025-08-02T19:20:24.348Z",
-    "events": 8,
-    "users": 0,
-    "repos": 0
+    "lastExecuted": "2025-08-02T19:28:33.426Z",
+    "events": 19,
+    "users": 1,
+    "repos": 1
   },
   "checked": {
     "mojombo": {
@@ -3385,6 +3385,10 @@
     "robknight": {
       "owner": "robknight",
       "lastExecuted": "2025-08-02T18:05:29.475Z"
+    },
+    "nihui": {
+      "owner": "nihui",
+      "lastExecuted": "2025-08-02T19:28:33.426Z"
     }
   }
 }
