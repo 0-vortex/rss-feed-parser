@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2025-09-07T22:17:33.525Z",
-    "events": 0,
+    "lastExecuted": "2025-09-07T22:27:15.494Z",
+    "events": 5,
     "users": 0,
-    "repos": 0
+    "repos": 1
   },
   "checked": {
     "mojombo": {
@@ -772,11 +772,11 @@
     },
     "miguelmota": {
       "owner": "miguelmota",
-      "lastExecuted": "2025-09-07T18:48:31.557Z"
+      "lastExecuted": "2025-09-07T22:27:15.494Z"
     },
     "sindresorhus": {
       "owner": "sindresorhus",
-      "lastExecuted": "2025-09-07T18:54:44.610Z"
+      "lastExecuted": "2025-09-07T22:27:15.494Z"
     },
     "ichiriac": {
       "owner": "ichiriac",
