@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2026-03-31T19:41:59.905Z",
-    "events": 34,
+    "lastExecuted": "2026-03-31T19:59:46.915Z",
+    "events": 2,
     "users": 0,
-    "repos": 0
+    "repos": 1
   },
   "checked": {
     "mojombo": {
@@ -340,7 +340,7 @@
     },
     "ljharb": {
       "owner": "ljharb",
-      "lastExecuted": "2026-03-31T16:08:32.160Z"
+      "lastExecuted": "2026-03-31T19:59:46.915Z"
     },
     "paulgb": {
       "owner": "paulgb",
@@ -764,11 +764,11 @@
     },
     "jlengstorf": {
       "owner": "jlengstorf",
-      "lastExecuted": "2026-03-31T13:02:15.835Z"
+      "lastExecuted": "2026-03-31T19:59:46.915Z"
     },
     "widmogrod": {
       "owner": "widmogrod",
-      "lastExecuted": "2026-03-31T13:02:15.835Z"
+      "lastExecuted": "2026-03-31T19:59:46.915Z"
     },
     "miguelmota": {
       "owner": "miguelmota",
@@ -2404,7 +2404,7 @@
     },
     "darccio": {
       "owner": "darccio",
-      "lastExecuted": "2026-03-31T13:02:15.835Z"
+      "lastExecuted": "2026-03-31T19:59:46.915Z"
     },
     "bgstaal": {
       "owner": "bgstaal",
