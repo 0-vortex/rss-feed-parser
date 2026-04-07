@@ -42,7 +42,12 @@ jobs:
           output_file: "public/diagram.svg"
           should_push: false
           root_path: "src/"
-          artifact_name: "diagram-${{ github.sha }}"
+
+      - name: "📂 upload diagram artifacts"
+        uses: actions/upload-artifact@v7
+        with:
+          name: diagram
+          path: "public/diagram.svg"
 
   release:
     environment:
@@ -63,7 +68,7 @@ jobs:
         if: needs.build.outputs.build-artifact
         uses: actions/download-artifact@v8
         with:
-          name: "diagram-${{ github.sha }}"
+          name: diagram
           path: .
 
       - name: "🚀 release"
@@ -84,4 +89,4 @@ jobs:
         uses: geekyeggo/delete-artifact@v6
         with:
           name: |
-            "diagram-${{ github.sha }}"
+            diagram
