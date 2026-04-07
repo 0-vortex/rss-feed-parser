@@ -31,8 +31,8 @@
     "db:push": "npm run db -- db push",
     "start": "node --experimental-json-modules ./src",
     "start:dev": "node --experimental-json-modules -r dotenv/config ./src",
-    "lint": "eslint --report-unused-disable-directives .",
-    "format": "npm run lint -- --fix"
+    "lint": "npx @biomejs/biome lint ./src",
+    "format": "npx @biomejs/biome format ./src --write"
   },
   "dependencies": {
     "@antfu/utils": "^0.7.6",
@@ -42,13 +42,9 @@
     "octokit": "^1.7.1"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.23.3",
-    "@babel/plugin-syntax-import-assertions": "^7.23.3",
+    "@biomejs/biome": "2.4.10",
     "@open-sauced/check-engines": "^1.2.0",
     "@open-sauced/conventional-commit": "^1.0.1",
-    "dotenv": "^16.3.1",
-    "eslint": "^8.54.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.29.0"
+    "dotenv": "^16.3.1"
   }
 }

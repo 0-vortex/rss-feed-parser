@@ -3,27 +3,20 @@
  * @type {string[]}
  */
 const parsableEvents = [
-  'CreateEvent',
-  'ForkEvent',
-  'MemberEvent',
-  'PublicEvent',
-  'PushEvent',
-  'ReleaseEvent',
-  'WatchEvent',
+  "CreateEvent",
+  "ForkEvent",
+  "MemberEvent",
+  "PublicEvent",
+  "PushEvent",
+  "ReleaseEvent",
+  "WatchEvent",
 ];
 
 const activityParser = (event) => {
   const parsable = parsableEvents.includes(event.type);
 
   if (parsable) {
-    const {
-      id,
-      type,
-      actor,
-      repo,
-      payload,
-      created_at,
-    } = event;
+    const { id, type, actor, repo, payload, created_at } = event;
 
     return {
       id,
@@ -38,7 +31,4 @@ const activityParser = (event) => {
   return null;
 };
 
-export {
-  parsableEvents,
-  activityParser,
-};
+export { parsableEvents, activityParser };
