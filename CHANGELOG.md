@@ -5,6 +5,27 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.3.18](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.17...v1.3.18) (2026-04-07)
+
+
+### 🔁 Continuous Integration
+
+* correct all actions ([7ccfcf6](https://github.com/0-vortex/rss-feed-parser/commit/7ccfcf671fd89c659000246cadd0ac6c00bf9c5f))
+
+
+### 🐛 Bug Fixes
+
+* correct actions upload artifact v4 bc ([c4124eb](https://github.com/0-vortex/rss-feed-parser/commit/c4124eb2cf7f8f3d95ec0bf5558f90afec74048f))
+* correct deps and lint issue on node 24 ([c43272d](https://github.com/0-vortex/rss-feed-parser/commit/c43272d369899c05cecd0f7d5a7cdfde774c9271))
+* correct node 22 import ([5a70372](https://github.com/0-vortex/rss-feed-parser/commit/5a70372cb15bc63f2a42dd3bd751ffbccb1d1e97))
+* correct toolcache bust on node 22 ([976728f](https://github.com/0-vortex/rss-feed-parser/commit/976728fefcc81e9a10a79fcf245f0e5af01cfefd))
+
+
+### ✅ Tests
+
+* attempt to fix diagram generation ([07e208a](https://github.com/0-vortex/rss-feed-parser/commit/07e208a1dc7e8058c988a4fc9a59503f01c88c05))
+* attempt to fix node@20 actions ([9d8bec3](https://github.com/0-vortex/rss-feed-parser/commit/9d8bec3f5588e7e302aa285800e31608863207c4))
+
 ## [1.3.17](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.16...v1.3.17) (2024-12-17)
 
 
