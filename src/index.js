@@ -4,7 +4,7 @@ import { writeFile } from 'node:fs/promises';
 import {
   hero, header, log, warning, error,
 } from './lib/logger.js';
-import cron from './cron.json' with { type: 'json' };
+import cron from './cron.json';
 import { activityParser } from './lib/activity.js';
 import { supabase } from './lib/supabase.js';
 
@@ -145,7 +145,7 @@ const run = async () => {
   await (async () => {
     insertUsers = Object.keys(insertUsers).map((k) => insertUsers[k]);
     log('Attempt to insert %d users', insertUsers.length);
-    const { error: err, data, count } = await supabase
+    const { error: err, count } = await supabase
       .from('users')
       .upsert(insertUsers, {
         // returning: "minimal",
