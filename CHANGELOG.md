@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.3.20](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.19...v1.3.20) (2026-04-07)
+
+
+### 🐛 Bug Fixes
+
+* correct artifact name and download ([c276e81](https://github.com/0-vortex/rss-feed-parser/commit/c276e8100e1abe167e3e9c17fa37085efe3a2c65))
+
 ## [1.3.19](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.18...v1.3.19) (2026-04-07)
 
 
