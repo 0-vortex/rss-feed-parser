@@ -21,10 +21,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "☁️ checkout repository"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: "🔧 setup node"
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 22
 
@@ -55,13 +55,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "☁️ checkout repository"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - name: "📂 download diagram artifacts"
         if: needs.build.outputs.build-artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v8
         with:
           name: diagram
           path: .
@@ -81,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "♻️ remove build artifacts"
-        uses: geekyeggo/delete-artifact@v2
+        uses: geekyeggo/delete-artifact@v6
         with:
           name: |
             diagram
