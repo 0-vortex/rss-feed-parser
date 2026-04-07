@@ -68,7 +68,7 @@ jobs:
         uses: actions/download-artifact@v8
         with:
           name: diagram
-          path: .
+          path: public
 
       - name: "🚀 release"
         id: semantic-release
