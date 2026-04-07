@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2026-04-07T22:36:14.778Z",
-    "events": 11,
+    "lastExecuted": "2026-04-07T22:55:33.877Z",
+    "events": 32,
     "users": 0,
-    "repos": 0
+    "repos": 2
   },
   "checked": {
     "mojombo": {
@@ -772,11 +772,11 @@
     },
     "miguelmota": {
       "owner": "miguelmota",
-      "lastExecuted": "2026-04-01T21:57:56.875Z"
+      "lastExecuted": "2026-04-07T22:55:33.877Z"
     },
     "sindresorhus": {
       "owner": "sindresorhus",
-      "lastExecuted": "2026-04-01T21:57:56.875Z"
+      "lastExecuted": "2026-04-07T22:55:33.877Z"
     },
     "ichiriac": {
       "owner": "ichiriac",
@@ -3388,7 +3388,7 @@
     },
     "nihui": {
       "owner": "nihui",
-      "lastExecuted": "2026-04-01T21:57:56.875Z"
+      "lastExecuted": "2026-04-07T22:55:33.877Z"
     },
     "danja": {
       "owner": "danja",
