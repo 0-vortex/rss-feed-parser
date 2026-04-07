@@ -5,6 +5,18 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.4.0](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.20...v1.4.0) (2026-04-07)
+
+
+### 🐛 Bug Fixes
+
+* remove eslint and prettier in favour of biome ([a0348b7](https://github.com/0-vortex/rss-feed-parser/commit/a0348b78bc921f372bd36e9f7b6a65279ce9b94d))
+
+
+### 🍕 Features
+
+* correct json import ([59c3161](https://github.com/0-vortex/rss-feed-parser/commit/59c316130218efb87f733554f18ffdae4337acc6))
+
 ## [1.3.20](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.19...v1.3.20) (2026-04-07)
 
 
