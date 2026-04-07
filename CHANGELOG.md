@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.3.19](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.18...v1.3.19) (2026-04-07)
+
+
+### 🐛 Bug Fixes
+
+* correct diagram output inclusion ([299769d](https://github.com/0-vortex/rss-feed-parser/commit/299769d3fef3e10f9f586832d0e81985e681ed32))
+
 ## [1.3.18](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.17...v1.3.18) (2026-04-07)
 
 
