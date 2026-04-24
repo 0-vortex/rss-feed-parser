@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2026-04-24T17:25:09.775Z",
-    "events": 28,
+    "lastExecuted": "2026-04-24T17:45:03.021Z",
+    "events": 13,
     "users": 0,
-    "repos": 2
+    "repos": 0
   },
   "checked": {
     "mojombo": {
@@ -772,11 +772,11 @@
     },
     "miguelmota": {
       "owner": "miguelmota",
-      "lastExecuted": "2026-04-23T21:29:39.125Z"
+      "lastExecuted": "2026-04-24T17:45:03.021Z"
     },
     "sindresorhus": {
       "owner": "sindresorhus",
-      "lastExecuted": "2026-04-23T21:29:39.125Z"
+      "lastExecuted": "2026-04-24T17:45:03.021Z"
     },
     "ichiriac": {
       "owner": "ichiriac",
@@ -784,7 +784,7 @@
     },
     "zakjan": {
       "owner": "zakjan",
-      "lastExecuted": "2026-04-23T21:29:39.125Z"
+      "lastExecuted": "2026-04-24T17:45:03.021Z"
     },
     "mpolden": {
       "owner": "mpolden",
@@ -2412,7 +2412,7 @@
     },
     "xpn": {
       "owner": "xpn",
-      "lastExecuted": "2026-04-23T21:29:39.125Z"
+      "lastExecuted": "2026-04-24T17:45:03.021Z"
     },
     "bagder": {
       "owner": "bagder",
@@ -3388,7 +3388,7 @@
     },
     "nihui": {
       "owner": "nihui",
-      "lastExecuted": "2026-04-23T21:29:39.125Z"
+      "lastExecuted": "2026-04-24T17:45:03.021Z"
     },
     "danja": {
       "owner": "danja",
