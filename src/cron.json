@@ -1,9 +1,9 @@
 {
   "lastExecution": {
-    "lastExecuted": "2026-05-28T20:33:55.824Z",
-    "events": 57,
+    "lastExecuted": "2026-05-28T21:19:35.765Z",
+    "events": 44,
     "users": 0,
-    "repos": 1
+    "repos": 7
   },
   "checked": {
     "mojombo": {
@@ -304,7 +304,7 @@
     },
     "dominikh": {
       "owner": "dominikh",
-      "lastExecuted": "2026-05-28T14:06:53.018Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "gr2m": {
       "owner": "gr2m",
@@ -492,15 +492,15 @@
     },
     "joelhooks": {
       "owner": "joelhooks",
-      "lastExecuted": "2026-05-28T01:54:35.493Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "evilsocket": {
       "owner": "evilsocket",
-      "lastExecuted": "2026-05-27T20:56:05.789Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "kuchin": {
       "owner": "kuchin",
-      "lastExecuted": "2026-05-27T20:56:05.789Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "fgnass": {
       "owner": "fgnass",
@@ -512,11 +512,11 @@
     },
     "utx0": {
       "owner": "utx0",
-      "lastExecuted": "2026-05-27T20:56:05.789Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "ska80": {
       "owner": "ska80",
-      "lastExecuted": "2026-05-27T20:56:05.789Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "mjackson": {
       "owner": "mjackson",
@@ -524,7 +524,7 @@
     },
     "jakearchibald": {
       "owner": "jakearchibald",
-      "lastExecuted": "2026-05-27T20:56:05.789Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "sorin-ionescu": {
       "owner": "sorin-ionescu",
@@ -532,23 +532,23 @@
     },
     "sparanoid": {
       "owner": "sparanoid",
-      "lastExecuted": "2026-05-27T20:56:05.789Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "brandur": {
       "owner": "brandur",
-      "lastExecuted": "2026-05-27T20:56:05.789Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "mrdoob": {
       "owner": "mrdoob",
-      "lastExecuted": "2026-05-27T20:56:05.789Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "aaronbassett": {
       "owner": "aaronbassett",
-      "lastExecuted": "2026-05-27T20:56:05.789Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "mdo": {
       "owner": "mdo",
-      "lastExecuted": "2026-05-27T20:56:05.789Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "matryer": {
       "owner": "matryer",
@@ -2372,7 +2372,7 @@
     },
     "akx": {
       "owner": "akx",
-      "lastExecuted": "2026-05-28T15:20:59.023Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "shawwn": {
       "owner": "shawwn",
@@ -3380,7 +3380,7 @@
     },
     "major": {
       "owner": "major",
-      "lastExecuted": "2026-05-27T20:56:05.789Z"
+      "lastExecuted": "2026-05-28T21:19:35.765Z"
     },
     "robknight": {
       "owner": "robknight",
