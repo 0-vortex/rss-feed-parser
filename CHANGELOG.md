@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.4.1](https://github.com/0-vortex/rss-feed-parser/compare/v1.4.0...v1.4.1) (2026-07-12)
+
+
+### 🐛 Bug Fixes
+
+* correct npm 12 breaking changes ([3556798](https://github.com/0-vortex/rss-feed-parser/commit/3556798a3c77e8f83c0f6a6dd6fd23a7021e6711))
+
 ## [1.4.0](https://github.com/0-vortex/rss-feed-parser/compare/v1.3.20...v1.4.0) (2026-04-07)
 
 
